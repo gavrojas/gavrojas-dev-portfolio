@@ -1,0 +1,27 @@
+.header{
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-head{
+  /* position: fixed; */
+  width: 96%;
+  max-width: 1200px;
+  margin: 16px;
+  display: flex;
+  padding: 16px 16px;
+  background-color: var(--primary-purple-1000);
+  justify-content: space-between;
+  align-items: center;
+  color: var(--neutral-white);
+  border-radius: 30px;
+}
+
+#btn-theme{
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: none;
+  color: var(--neutral-white);
+}
+

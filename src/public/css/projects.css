@@ -1,0 +1,68 @@
+:root{
+  --projects: 3
+}
+
+.projects-section{
+  padding: 20px 16px;
+  gap: 16px;
+}
+
+.project-carrousel{
+  position: relative;
+  background: var(--primary-purple-100, #f5e9fe);
+  width: 328px;
+  height: 332px;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 0.1px solid var(--neutral-700, #4F4554);
+}
+
+.projects{
+  display: flex;
+  width: calc(100% * var(--projects));
+  height: 100%;
+}
+
+.project{
+  display: flex;
+  padding: 20px 16px;
+  width: calc(100% / var(--projects));
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: var(--primary-purple-200, #edd7fd);
+}
+
+.project img{
+  width: 100%;
+}
+
+.default-view{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.slider{
+  position: absolute;
+  display: flex;
+  top: 50%;
+  cursor: pointer;
+  transform: translate(0, -50%);
+  transition: .5s ease;
+  user-select: none;
+}
+
+.right{
+  right: 10px;
+}
+
+.left{
+  left: 10px;
+}
+
+.slider:hover rect{
+  fill: var(--primary-purple-800,#7727a2);
+}

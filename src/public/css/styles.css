@@ -1,0 +1,151 @@
+/*? Importación estilos */
+@import url(navbar.css);
+@import url(home.css);
+@import url(about-me.css);
+@import url(skills-tools.css);
+@import url(footer.css);
+@import url(contact.css);
+@import url(projects.css);
+
+/* *Estilos generales */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+:root{
+  /* colors variables  */
+  --primary-purple-50:#fbf5ff;
+  --primary-purple-100:#f5e9fe;
+  --primary-purple-200:#edd7fd;
+  --primary-purple-300:#dfb7fb;
+  --primary-purple-400:#cc8af6;
+  --primary-purple-500:#b85def;
+  --primary-purple-600:#a53ce1;
+  --primary-purple-700:#8e2ac6;
+  --primary-purple-800:#7727a2;
+  --primary-purple-900:#5c1f7a;
+  --primary-purple-950:#430b60;
+  --primary-purple-1000:#180122;
+  --seconday-green-50:#f2fbf4;
+  --seconday-green-100:#e1f7e7;
+  --seconday-green-200:#c4eed0;
+  --seconday-green-300:#a8e5ba;
+  --seconday-green-400:#60c87f;
+  --seconday-green-500:#3aad5c;
+  --seconday-green-600:#2b8e48;
+  --seconday-green-700:#25703c;
+  --seconday-green-800:#225933;
+  --seconday-green-900:#1d4a2c;
+  --seconday-green-950:#0b2815;
+  --neutral-white:#fbf7fb;
+  --neutral-100:#dedbe1;
+  --neutral-300:#c0b9c6;
+  --neutral-500:#8f8198;
+  --neutral-700:#4f4554;
+  --neutral-850:#1a171c;
+  --neutral-dark:#0a000f;
+  --semantic-error:#a50d08;
+  --semantic-alert:#ee9e1e;
+  --semantic-info:#1a41a3;
+  --semantic-success:#00b570;
+  /* Text-size styles */
+  /* base size: plus--jakarta--sans--16px--regular (16px) */
+  --plus--jakarta--sans--52px--regular: 3.25rem;
+  --plus--jakarta--sans--46px--regular: 2.88rem;
+  --plus--jakarta--sans--41px--regular: 2.56rem;
+  --plus--jakarta--sans--36px--regular: 2.25rem;
+  --plus--jakarta--sans--32px--regular: 2rem;
+  --plus--jakarta--sans--29px--regular: 1.81rem;
+  --plus--jakarta--sans--26px--regular: 1.62rem;
+  --plus--jakarta--sans--23px--regular: 1.44rem;
+  --plus--jakarta--sans--20px--regular: 1.25rem;
+  --plus--jakarta--sans--18px--regular: 1.12rem;
+  --plus--jakarta--sans--16px--regular: 1rem;
+  --plus--jakarta--sans--14px--regular: 0.88rem;
+  --plus--jakarta--sans--13px--regular: 0.81rem;
+  --plus--jakarta--sans--11px--regular: 0.69rem;
+}
+
+body{
+  background-color: var(--primary-purple-100);
+  color: var(--neutral-dark);
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 16px;
+  max-width: 1200px;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  font-size: 3.25rem;
+}
+
+h2{
+  font-size: 2.56rem;
+  text-align: center;
+}
+
+h3{
+  font-family: "Englebert", cursive;
+  font-size: 2.25rem;
+  font-weight: 300;
+  color: var(--neutral-dark);
+}
+
+h1, h2{
+  font-family: "Englebert", cursive;
+  color: var(--primary-purple-800);
+  font-weight: 500;
+}
+
+.btn-primary{
+  display: flex;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 16px;
+  border: none;
+  background: var(--primary-purple-900, #5C1F7A); 
+  color: var(--neutral-white, #fbf7fb);
+  width: fit-content;
+}
+
+.btn-secondary{
+  display: flex;
+  width: 122px;
+  padding: 4px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 16px;
+  border: 1px solid var(--primary-purple-900, #5C1F7A);
+  background: var(--primary-purple-200);
+  color: var(--primary-purple-900, #5C1F7A);
+  width: fit-content;
+}
+
+::selection {
+  background: var(--primary-purple-800);
+  color: var(--neutral-white, #fbf7fb);
+}
+
+.hide{
+  display: none;
+}
