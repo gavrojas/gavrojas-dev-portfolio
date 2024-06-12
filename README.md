@@ -1,7 +1,8 @@
 # gavrojas-dev-portfolio
 ### Pendientes
-- [ ] vista tablet 
-- [ ] vista desktop
+- [X] vista tablet 
+- [X] vista desktop
+- [ ] validación form
 - [ ] animación logo
 - [ ] navbar botton mobile
 - [ ] alert form sent

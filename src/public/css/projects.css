@@ -66,3 +66,33 @@
 .slider:hover rect{
   fill: var(--primary-purple-800,#7727a2);
 }
+
+/* ?---------Media queries responsive design----------- */
+/* mq for tablets ((min-width: 500px) */
+@media (min-width: 500px){
+  .project-carrousel{
+    width: 400px;
+  }
+}
+
+/* mq for tablets ((min-width: 768px) */
+@media (min-width: 768px){
+  .project-carrousel{
+    width: 600px;
+  }
+  .slider{
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* mq for desktop (min-width: 1200px) */
+@media (min-width: 1200px){
+  .project-carrousel{
+    width: 1000px;
+  }
+  .slider{
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -73,23 +73,23 @@
 }
 
 body{
-  background-color: var(--primary-purple-100);
+  background-color: var(--primary-purple-50);
   color: var(--neutral-dark);
 }
 
-section{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding: 0 16px;
-  max-width: 1200px;
+h3{
+  font-family: "Englebert", cursive;
+  font-size: 2.25rem;
+  font-weight: 300;
+  color: var(--neutral-dark);
+  text-align: center;
 }
 
-main{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+h1, h2{
+  font-family: "Englebert", cursive;
+  color: var(--primary-purple-800);
+  font-weight: 500;
+  text-align: center;
 }
 
 h1{
@@ -98,20 +98,20 @@ h1{
 
 h2{
   font-size: 2.56rem;
-  text-align: center;
 }
 
-h3{
-  font-family: "Englebert", cursive;
-  font-size: 2.25rem;
-  font-weight: 300;
-  color: var(--neutral-dark);
+section{
+  display: grid;
+  place-content: center;
+  padding: 0 16px;
+  width: 100%;
+  max-width: 620px;
 }
 
-h1, h2{
-  font-family: "Englebert", cursive;
-  color: var(--primary-purple-800);
-  font-weight: 500;
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .btn-primary{
@@ -148,4 +148,10 @@ h1, h2{
 
 .hide{
   display: none;
+}
+
+@media (min-width: 768px){
+  section{
+    max-width: 1000px;
+  }
 }

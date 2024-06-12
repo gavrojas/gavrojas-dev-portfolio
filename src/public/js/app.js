@@ -50,6 +50,6 @@ SendMail = () => {
     message: document.getElementById("message").value
   }
   emailjs.send("contact-portfolio", "contact-portfolio", params).then(function (res){
-    alert("Correo enviado" + res.status);
+    alert("Correo enviado 😊, Estado: " + res.status);
   }) 
 }

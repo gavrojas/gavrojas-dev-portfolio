@@ -89,4 +89,19 @@
 .ctas{
   display: flex;
   gap: 12px;
+  align-self: center;
+}
+
+/* ?---------Media queries responsive design----------- */
+/* mq for tablets ((min-width: 768px) */
+@media (min-width: 768px){
+  .who-am-i-container{
+    flex-direction: row;
+    padding: 0 24px;
+  }
+
+  .who-am-i-content {
+    width: 70%;
+    max-width: 600px;
+  }
 }

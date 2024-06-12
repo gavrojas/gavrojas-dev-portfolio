@@ -21,3 +21,19 @@ small{
   gap: 2px;
   text-align: center;
 }
+
+.footer-top{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+/* ?---------Media queries responsive design----------- */
+/* mq for tablets ((min-width: 500px) */
+@media (min-width: 500px){
+  .footer-top {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
