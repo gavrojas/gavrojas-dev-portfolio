@@ -24,29 +24,17 @@
   box-shadow: -2px -2px 0px 0px var(--primary-purple-300, #DFB7FB);
 }
 
-.img-values{
-  z-index: 7;
-}
+.img-values{z-index: 7;}
 
-.emphatic{
-  z-index: 6;
-}
+.emphatic{z-index: 6;}
 
-.creative{
-  z-index: 5;
-}
+.creative{z-index: 5;}
 
-.resilient{
-  z-index: 4;
-}
+.resilient{z-index: 4;}
 
-.curious{
-  z-index: 3;
-}
+.curious{z-index: 3;}
 
-.resolutive{
-  z-index: 2;
-}
+.resolutive{z-index: 2;}
 
 .me-container{
   position: relative;
@@ -75,10 +63,8 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
-
-.who-am-i-content svg{
-  min-width: 24px;
+  
+  svg{min-width: 24px;}
 }
 
 .text1, .text2, .text3{

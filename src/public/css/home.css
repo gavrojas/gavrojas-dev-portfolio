@@ -75,13 +75,13 @@
   gap: 16px;
   align-self: stretch;
   flex-wrap: wrap;
-}
 
-.social-media-list a{
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--neutral-dark, #0a000f);
+  a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--neutral-dark, #0a000f);
+  }
 }
 
 .scroll-down-icon{

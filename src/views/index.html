@@ -13,7 +13,7 @@
 </head>
 <body>
   <header class="header">
-    <nav class="navbar-head">
+    <nav id="navbar-head" class="navbar-head">
       <a class="logo" href="/">
         <svg xmlns="http://www.w3.org/2000/svg" width="124" height="31" viewBox="0 0 124 31" fill="none">
           <path d="M115 25.2344L113.594 21.9531L121.035 17.168L113.164 13.1641L114.277 9.60938L123.203 15.2344V18.5156L115 25.2344Z" fill="#DFB7FB"/>
@@ -26,11 +26,11 @@
           <path d="M9.92188 25.2344L1.15234 19.6094L0.957031 16.3281L9.16016 9.60938L10.5664 12.8711L3.125 17.6758L10.9961 21.6797L9.92188 25.2344Z" fill="#DFB7FB"/>
         </svg>
       </a>
-      <div class="container-menu hide">
+      <div class="container-menu">
         <ul class="menu-list">
-          <li><a href="/">Acerca de mi</a></li>
-          <li><a href="/">Proyectos</a></li>
-          <li><a href="/">Contacto</a></li>          
+          <li><a href="">Acerca de mi</a></li>
+          <li><a href="">Proyectos</a></li>
+          <li><a href="">Contacto</a></li>          
         </ul>
       </div>
       <button id="btn-theme" class="light" type="button">
@@ -629,7 +629,7 @@
           <p>O déjame tus datos y mensaje en el siguiente formulario:</p>
           <form class="contact-form">
             <label for="client-name">Nombre</label>
-            <input type="text" id="client-name" required name="client-name" placeholder="Escribe tu nombre">
+            <input id="client-name" required name="client-name" placeholder="Escribe tu nombre">
             <label for="client-mail">Correo</label>
             <input type="email" id="client-mail" required name="client-mail" placeholder="Escribe tu correo">
             <label for="message">Mensaje</label>

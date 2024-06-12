@@ -6,7 +6,7 @@
 .navbar-head{
   /* position: fixed; */
   width: 96%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 16px;
   display: flex;
   padding: 16px 16px;
@@ -25,3 +25,26 @@
   color: var(--neutral-white);
 }
 
+.container-menu{
+  display: none;   
+}
+
+
+@media (min-width: 768px){
+  .logo{
+    width: inherit;
+  }
+
+  .container-menu{
+    display: block;
+    width: inherit;
+    .menu-list{
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      a{
+        color: var(--neutral-white, #fbf7fb);
+      }
+    }
+  }
+}

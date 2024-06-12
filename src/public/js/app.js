@@ -1,4 +1,18 @@
-//* Carrousel project
+//* header fixed con scroll
+window.onscroll = function() {headerFixed()};
+
+let header = document.getElementById("navbar-head");
+let sticky = header.offsetTop;
+
+function headerFixed() {
+  if (window.scrollY > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+//* Carrousel projects
 const btnLeft = document.querySelector(".left"),
       btnRight = document.querySelector(".right"),
       slider = document.getElementById("slider"),
