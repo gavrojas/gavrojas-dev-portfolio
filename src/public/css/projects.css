@@ -32,10 +32,7 @@
   align-items: center;
   gap: 12px;
   background: var(--primary-purple-200, #edd7fd);
-}
-
-.project img{
-  width: 100%;
+  img{width: 100%;}
 }
 
 .default-view{

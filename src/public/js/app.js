@@ -1,4 +1,7 @@
-//* header fixed con scroll
+//? Declaración constantes
+const formContact = document.querySelector('.contact-form');
+
+//? header fixed con scroll
 window.onscroll = function() {headerFixed()};
 
 let header = document.getElementById("navbar-head");
@@ -12,7 +15,7 @@ function headerFixed() {
   }
 }
 
-//* Carrousel projects
+//? Carrousel projects
 const btnLeft = document.querySelector(".left"),
       btnRight = document.querySelector(".right"),
       slider = document.getElementById("slider"),
@@ -56,14 +59,32 @@ moveToLeft = () =>{
   slider.style.transition = `all ease .06s`;
 }
 
-//* Form contact
+//? Form contact
+//Validation
+
+document.addEventListener('DOMContentLoaded', () => {
+  
+  formContact.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+  })
+
+})
+
+//Envío mail 
 SendMail = () => {
-  let params = {
-    from_name: document.getElementById("client-name").value,
-    email_id: document.getElementById("client-mail").value,
-    message: document.getElementById("message").value
+  const name = document.getElementById("client-name").value;
+  const mail = document.getElementById("client-mail").value;
+  const message = document.getElementById("message").value;
+
+  if (name !="" && mail !="" && message !=""){
+    let params = {
+      from_name: name,
+      email_id: mail,
+      message: message
+    }
+    emailjs.send("contact-portfolio", "contact-portfolio", params).then(function (res){
+      alert("Correo enviado 😊, Estado: " + res.status);
+    })
   }
-  emailjs.send("contact-portfolio", "contact-portfolio", params).then(function (res){
-    alert("Correo enviado 😊, Estado: " + res.status);
-  }) 
 }
